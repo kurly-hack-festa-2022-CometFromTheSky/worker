@@ -21,6 +21,9 @@ public class Key {
     private Long id;
 
     @NotNull
+    private String token;
+
+    @NotNull
     private String encryptedKey;
 
     @NotNull
@@ -37,7 +40,8 @@ public class Key {
     private LocalDateTime createdAt;
 
     @Builder
-    public Key(String encryptedKey, String provider, Boolean isUsed) {
+    public Key(String token, String encryptedKey, String provider, Boolean isUsed) {
+        this.token = token;
         this.encryptedKey = encryptedKey;
         this.provider = provider;
         this.isUsed = isUsed;
