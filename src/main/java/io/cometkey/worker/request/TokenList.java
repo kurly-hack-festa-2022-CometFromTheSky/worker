@@ -7,13 +7,13 @@ import java.util.List;
 
 @Getter @Setter
 @NoArgsConstructor(access =  AccessLevel.PROTECTED)
-public class KeyList {
+public class TokenList {
 
     @NotNull
-    private List<Long> idList;
+    private List<String> tokenList;
 
     @Builder
-    public KeyList(List<Long> idList) {
-        this.idList = idList;
+    public TokenList(List<String> tokenList) {
+        this.tokenList = tokenList;
     }
 }
