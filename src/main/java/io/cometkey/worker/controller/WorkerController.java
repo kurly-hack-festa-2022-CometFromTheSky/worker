@@ -1,10 +1,10 @@
 package io.cometkey.worker.controller;
 
 import io.cometkey.worker.domain.Key;
-import io.cometkey.worker.request.TokenList;
-import io.cometkey.worker.response.DeliveryResponse;
-import io.cometkey.worker.response.KeyResponse;
-import io.cometkey.worker.response.UsageResponse;
+import io.cometkey.worker.controller.request.TokenList;
+import io.cometkey.worker.controller.response.DeliveryResponse;
+import io.cometkey.worker.controller.response.KeyResponse;
+import io.cometkey.worker.controller.response.UsageResponse;
 import io.cometkey.worker.service.WorkerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

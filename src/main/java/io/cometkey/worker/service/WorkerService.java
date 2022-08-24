@@ -21,7 +21,7 @@ public class WorkerService {
     public List<Key> getKey(List<String> tokenList) { return this.keyRepository.findAllByToken(tokenList); }
     public String getEncryptedKey(String token) {
         //TODO: .orElseThrow(NoSuchTokenException.class)
-        Key key = this.keyRepository.findByToken(token).orElseThrow(null);
+        Key key = this.keyRepository.findByToken(token).get();
         if (key.getIsUsed()) {
             return "[Used Key Error] Key is expired.";
         } else {
